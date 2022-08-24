@@ -4,9 +4,9 @@ require('dotenv').config();
 
 const { abi, evm } = require('./compile');
  
-provider = new HDWalletProvider(
+const provider = new HDWalletProvider(
   process.env.MNEMONIC,
-	process.env.INFURA_URL,
+  process.env.INFURA_URL,
 );
  
 const web3 = new Web3(provider);
